@@ -1,4 +1,4 @@
-#Readme
+# Readme
 
 This is a file extension testing script that I use for capture the flag and tryhackme rooms. I created this specifically for the Vulnerversity room to figure out what file extensions where allowed in the input. 
 
@@ -8,9 +8,9 @@ There he created a more basic version of this script, specifically for vulnerver
 
 Credits are in the ape.py file at the top.  
 
-DO NOT USE THIS FOR ANY ILLEGAL REASONS. THIS IS PURELY INTENDED FOR EDUCATIONAL PURPOSES AND FOR LEGAL PENTESTING. 
+### DO NOT USE THIS FOR ANY ILLEGAL REASONS. THIS IS PURELY INTENDED FOR EDUCATIONAL PURPOSES AND FOR LEGAL PENTESTING. 
 
-##Installation and Usage 
+## Installation and Usage 
 
 git clone https://github.com/4nth0ny1/file_extension_tester.git
 cd file_extension_tester
@@ -24,7 +24,7 @@ https://github.com/pentestmonkey/php-reverse-shell
 
 You will have to rename the php reverse shell to revshell.php and have it in the same directory if you want to use it without too many changes. 
 
-Example usage 
+## Example usage 
 
 python ape.py -i 10.10.X.X -p 3333 -s internal/index.php -e Extension not allowed
 
