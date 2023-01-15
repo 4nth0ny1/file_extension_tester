@@ -1,3 +1,7 @@
+# file list comes from https://gist.github.com/securifera/e7eed730cbe1ce43d0c29d7cd2d582f4
+# based on john hammond's vulniversity thm ctf video script https://www.youtube.com/watch?v=hvYWCegfEZs&t=910s
+
+
 #!/usr/bin/env python
 
 import requests 
