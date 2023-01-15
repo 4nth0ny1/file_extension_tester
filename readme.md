@@ -15,7 +15,7 @@ Credits are in the ape.py file at the top.
 git clone https://github.com/4nth0ny1/file_extension_tester.git
 cd file_extension_tester
 
-## help
+## Help
 python ape.py -h 
 
 I used the pentester monkey php reverse shell for Vulniversity on THM and copied it to the file_extension_tester directory for ease of use. 
