@@ -8,6 +8,9 @@ There he created a more basic version of this script, specifically for vulnerver
 
 Credits are in the ape.py file at the top.  
 
+filename extension list 
+https://gist.github.com/securifera/e7eed730cbe1ce43d0c29d7cd2d582f4
+
 ### DO NOT USE THIS FOR ANY ILLEGAL REASONS. THIS IS PURELY INTENDED FOR EDUCATIONAL PURPOSES AND FOR LEGAL PENTESTING. 
 
 ## Installation and Usage 
