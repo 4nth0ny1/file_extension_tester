@@ -11,19 +11,17 @@ import os
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-i", "--ip", dest="ip", help="Ip Address")
-parser.add_argument("-p", "--port", dest="port", help="Port Number")
 parser.add_argument("-s", "--sub-directory", dest="sub_directory", help="Sub-Directory. >> internal/index.php")
 
 arguments = parser.parse_args()
 
 ip = arguments.ip
-port = arguments.port
 sub_directory = arguments.sub_directory
 # url = f"http://{ip}:{port}/{sub_directory}"
 
-old_filename = "revshell.php"
+old_filename = "php-reverse-shell.php"
 
-filename = "revshell"
+filename = "php-reverse-shell"
 
 with open("file_extension_list.txt", "r") as f:
     lines = f.read().splitlines()
