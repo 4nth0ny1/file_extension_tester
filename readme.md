@@ -29,7 +29,7 @@ you can use whatever file you want, just change the value of the two variables o
 
 ## Example usage 
 
-python ape.py -i 10.10.X.X -p 3333 -s internal/index.php
+python ape.py -i 10.10.X.X:3333 -s /internal/index.php -e ./file_extension_list.txt -em "Extension not allowed" 
 
 plus make a change the if not statement on line 44 to accomodate for the error message that is in the r.text when a file extension is not allowed. 
 

@@ -10,12 +10,15 @@ import os
 
 parser = argparse.ArgumentParser()
 
+
+parser.add_argument("-em", "--error-message", dest="error_message", help="Error Message >> in quotes ... Extension not allowed")
 parser.add_argument("-e", "--extension", dest="extension_list", help="File Extension List >> ./file_extension_list.txt")
 parser.add_argument("-i", "--ip", dest="ip", help="Ip Address and port >>> 10.10.x.x:3333")
 parser.add_argument("-s", "--sub-directory", dest="sub_directory", help="Sub-Directory. >> /internal/index.php")
 
 arguments = parser.parse_args()
 
+error_message = arguments.error_message
 extension_list = arguments.extension_list
 ip = arguments.ip
 sub_directory = arguments.sub_directory
@@ -40,7 +43,7 @@ for ext in Array:
     files = {"file": open(new_filename, "rb")}
     r = requests.post(url, files=files)
 
-    if not "Extension not allowed" in r.text:
+    if not error_message in r.text:
         print(f"{ext} seems to be allowed")
 
     old_filename = new_filename
