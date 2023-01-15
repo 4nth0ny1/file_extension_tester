@@ -4,8 +4,17 @@
 
 #!/usr/bin/env python
 
+import argparse
 import requests 
 import os 
+
+parser = argparse.ArgumentParser(
+    
+)
+
+parser.add_argument("-i", "--ip", dest="ip", help="Ip Address")
+
+parser.parse_args()
 
 ip =""
 url = f"http://{ip}:3333/internal.index.php"
