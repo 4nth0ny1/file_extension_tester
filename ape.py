@@ -13,11 +13,13 @@ parser = argparse.ArgumentParser(
 )
 
 parser.add_argument("-i", "--ip", dest="ip", help="Ip Address")
+parser.add_argument("-p", "--port", dest="port", help="Port Number")
+parser.add_argument("-s", "--sub-directory", dest="sub_directory", help="Sub-Directory")
+parser.add_argument("-e", "--error", dest="error", help="Error Message. >> What message should not happen?")
 
 parser.parse_args()
 
-ip =""
-url = f"http://{ip}:3333/internal.index.php"
+# url = f"http://{ip}:{port}/internal/index.php"
 
 old_filename = "revshell.php"
 
