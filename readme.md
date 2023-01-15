@@ -26,6 +26,7 @@ You will have to rename the php reverse shell to revshell.php and have it in the
 
 ## Example usage 
 
-python ape.py -i 10.10.X.X -p 3333 -s internal/index.php -e Extension not allowed
+python ape.py -i 10.10.X.X -p 3333 -s internal/index.php
+plus make a change the if not statement on line 44 to accomodate for the error message that is in the r.text when a file extension is not allowed. 
 
 
