@@ -10,20 +10,21 @@ import os
 
 parser = argparse.ArgumentParser()
 
+parser.add_argument("-e", "--extension", dest="extension_list", help="File Extension List >> ./file_extension_list.txt")
 parser.add_argument("-i", "--ip", dest="ip", help="Ip Address and port >>> 10.10.x.x:3333")
 parser.add_argument("-s", "--sub-directory", dest="sub_directory", help="Sub-Directory. >> /internal/index.php")
 
 arguments = parser.parse_args()
 
+extension_list = arguments.extension_list
 ip = arguments.ip
 sub_directory = arguments.sub_directory
 # url = f"http://{ip}{sub_directory}"
 
 old_filename = "php-reverse-shell.php"
-
 filename = "php-reverse-shell"
 
-with open("file_extension_list.txt", "r") as f:
+with open(extension_list, "r") as f:
     lines = f.read().splitlines()
 
 Array = list()
