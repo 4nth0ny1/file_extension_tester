@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#test
+
 import requests 
 import os 
 
@@ -26,10 +26,7 @@ for ext in Array:
     files = {"file": open(new_filename, "rb")}
     r = requests.post(url, files=files)
 
-    print(r.text)
-    if "Extension not allowed" in r.text:
-        print(f"{ext} not allowed")
-    else: 
+    if not "Extension not allowed" in r.text:
         print(f"{ext} seems to be allowed")
 
     old_filename = new_filename
