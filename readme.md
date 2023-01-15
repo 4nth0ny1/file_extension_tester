@@ -25,7 +25,7 @@ I used the pentester monkey php reverse shell for Vulniversity on THM and copied
 
 https://github.com/pentestmonkey/php-reverse-shell
 
-You will have to rename the php reverse shell to revshell.php and have it in the same directory if you want to use it without too many changes. 
+you can use whatever file you want, just change the value of the two variables old_filename and filename. 
 
 ## Example usage 
 
