@@ -9,12 +9,6 @@ url = f"http://{ip}:3333/internal.index.php"
 old_filename = "revshell.php"
 
 filename = "revshell"
-extensions = [
-    ".php",
-    ".php3",
-    ".php5",
-    ".pthml",
-]
 
 with open("file_extension_list.txt", "r") as f:
     lines = f.read().splitlines()
